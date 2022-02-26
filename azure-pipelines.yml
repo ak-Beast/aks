@@ -10,7 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'ff118402-bc27-4e81-897d-d76fb86c04e6'
+  dockerRegistryServiceConnection: 'e3d65d1c-24ca-4ce6-b728-305bd803b42d'
   imageRepository: 'g7crtechnologiesazuredevopsdemo'
   containerRegistry: 'mydevopsdemoregistry.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
@@ -44,4 +44,3 @@ stages:
         TargetFolder: '$(Build.ArtifactStagingDirectory)'
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Artifact: drop'
-
