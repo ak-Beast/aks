@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: 'mydevopsdemoregistry007.azurecr.io/azuredevopsdemo:#{Build.BuildId}#'
+        image: 'mydevopsdemoregistry.azurecr.io/azuredevopsdemo:#{Build.BuildId}#'
         resources:
           limits:
             memory: "128Mi"
