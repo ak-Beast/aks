@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: akbeastaks 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: akbeastaks
+  template:
+    metadata:
+      labels:
+        app: akbeastaks 
+    spec:
+      containers:
+        - name: akbeastaks 
+          image: aksdevopscicd.azurecr.io/akbeastaks
+          ports:
+          - containerPort: 80
